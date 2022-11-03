@@ -50,3 +50,50 @@ select {
   text-align: center;
   padding: 1.5em;
 }
+main{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5em;
+}
+.card-desc{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em;    
+}
+
+aside .card img{
+    width: 7em;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+}
+.archive{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+}
+.archive p {
+    width: 80%;
+    background-color: white;
+    padding: 1em;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    background-color: white;
+    padding: 1em;
+}
+.social-media span{
+    text-align: center;
+    width: 25%;
+
+}
