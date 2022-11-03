@@ -1,0 +1,10 @@
+@media (max-width: 62em){
+    aside .card-desc{
+        padding: 0.5em 1em;  
+    }
+}
+@media (max-width: 55.75em){
+    aside .card-desc{
+        padding: 0.5em 1em;  
+    }
+}
