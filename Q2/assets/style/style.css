@@ -1,0 +1,42 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+header {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    background-color: #fff;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+}
+
+.adding-video {
+    border: 0.125em solid rgb(5, 163, 232);
+    ;
+    border-radius: 1em;
+    color: rgb(5, 163, 232);
+    ;
+    padding: 0.75em 1em;
+}
+
+.search-box {
+    width: 40em;
+    border-radius: 1em;
+    display: flex;
+    background-color: #f7f7f7;
+    padding: 0.75em 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box input {
+    border: none;
+    background-color: #f7f7f7;
+}
