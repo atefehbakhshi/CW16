@@ -9,6 +9,7 @@ header {
     background-color: #fff;
     align-items: center;
     position: relative;
+    box-shadow: rgb(0 0 0 / 10%) 1px 0px 7px 0px;
 }
 
 .header {
@@ -20,6 +21,8 @@ header {
 .header-right {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 1em;
 }
 
 .login {
@@ -30,26 +33,210 @@ header {
 .adding-video {
     border: 0.125em solid rgb(5, 163, 232);
     ;
-    border-radius: 1em;
+    border-radius: 2em;
     color: rgb(5, 163, 232);
     ;
-    padding: 0.75em 1em;
+    padding: 0.75em 2em;
+    background-color: #fff;
 }
 
 .search-box {
-    width: 40em;
+    max-width: 37.5em;
+    width: 45%;
     border-radius: 1em;
     display: flex;
     background-color: #f7f7f7;
     padding: 0.75em 1em;
-    display: flex;
     justify-content: space-between;
     position: absolute;
-    top: 0.5em;
-    left: 21em
+    top: 20%;
+    left: 30%
 }
 
-.search-box input {
+input {
     border: none;
     background-color: #f7f7f7;
+}
+
+.view-video {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.small-header {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu span {
+    border: none;
+    background-color: #fff;
+}
+
+/* ****************** */
+/* main-container */
+/* ****************** */
+.main-container {
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-areas:
+        "main main aside "
+        "comments comments aside "
+        ". . aside ";
+    direction: rtl;
+    padding: 1em;
+}
+
+aside,
+main,
+.comments {
+    padding: 0 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    grid-area: aside;
+    gap: 0.5em;
+}
+
+.aside-title,
+.auto-play {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside-title {
+    margin-bottom: 0.5em;
+}
+
+.post {
+    display: flex;
+    gap: 0.5em;
+}
+
+.post-desc {
+    padding: 0.5em 0;
+}
+
+.views-date {
+    display: flex;
+    gap: 0.5em;
+}
+
+main {
+    grid-area: main;
+}
+
+main img {
+    max-width: 100%;
+}
+
+.video-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+.visibility {
+    display: flex;
+    gap: 0.5em;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.reaction,
+.hashtak {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.hashtak {
+    width: 80%;
+    margin-bottom: 1em;
+}
+
+.reaction-left {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.follow-btn {
+    border: 0.125em solid red;
+    ;
+    border-radius: 2em;
+    color: #fff;
+    ;
+    padding: 0.75em 2em;
+    background-color: red;
+}
+
+.date,
+.varzesh {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5em;
+}
+
+.comments {
+    grid-area: comments;
+}
+
+.writing-comments-box,
+.user-comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+    gap: 0.5em;
+}
+
+.write-box {
+    width: 95%;
+    border-radius: 1em;
+    display: flex;
+    background-color: #f7f7f7;
+    padding: 0.75em 1em;
+    justify-content: space-between;
+}
+
+.write-box span {
+    transform: rotate(180deg);
+}
+
+.circle-person {
+    padding: 0.75em;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+}
+
+.user-comment {
+    gap: 1em;
+}
+
+.col-left {
+    width: 95%;
+    display: flex;
+    padding: 0.75em 1em;
+    justify-content: space-between;
+}
+
+.user-name-date {
+    display: flex;
+    gap: 0.5em;
+}
+
+hr {
+    border: none;
+    background-color: #f1f1f1;
+    height: 0.1em;
 }

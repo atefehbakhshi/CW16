@@ -1,2 +1,48 @@
 /* 1000px */
-@media (max-width='63em') {}
+@media (max-width:63em) {
+    header {
+        padding-bottom: 4em;
+    }
+
+    .header-left {
+        gap: 3em;
+    }
+
+    .header-right {
+        gap: 1.5em;
+    }
+
+    .search-box {
+        max-width: 63em;
+        position: absolute;
+        width: 95%;
+        top: 50%;
+        left: 2.5%;
+    }
+
+    .main-container {
+        grid-template-areas: "main""aside""comments"
+    }
+}
+
+/* 750px */
+@media (max-width:46em) {
+    header {
+        padding: 1em;
+    }
+
+    .header,
+    .search-box {
+        display: none;
+    }
+
+    .small-header {
+        display: flex;
+    }
+
+    .small-header-left,
+    .small-header-right {
+        display: flex;
+        gap: 2em;
+    }
+}
