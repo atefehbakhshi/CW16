@@ -46,7 +46,12 @@
     }
 
     .social-media {
+        margin: auto;
         justify-content: center;
-        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-desc {
+        flex-direction: column;
     }
 }

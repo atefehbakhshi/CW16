@@ -47,12 +47,6 @@ select {
   height: 25em;
 }
 
-/* .container-1 {
-  grid-column: 1/-1;
-  grid-template-columns: 2fr 1fr;
-  padding: 2em;
-} */
-
 .about {
   display: flex;
   justify-content: center;
@@ -125,4 +119,34 @@ aside {
 .social-media span {
   text-align: center;
   width: 25%;
+}
+
+footer {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: black;
+  padding: 2em 4em;
+  color: white;
+}
+
+.footer-desc {
+  display: flex;
+  gap: 1em;
+}
+
+.footer-desc p {
+  margin-top: 1em;
+  color: rgb(211, 211, 211);
+}
+
+hr {
+  border: none;
+  background-color: #f2efef;
+  height: 0.1em;
+}
+
+.copyright {
+  text-align: center;
 }
